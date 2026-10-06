@@ -1,0 +1,18 @@
+name: Rational Test Automation Server
+
+on: workflow_dispatch
+
+jobs:
+    OTS-Action:
+        runs-on: self-hosted
+        name: Rational Test Automation Server
+        steps:
+         - name: Execute Test
+           uses: IBM/devopsauto-testserver-actions@main
+           with:
+            serverUrl: https://10.190.97.68.nip.io/test/
+            offlineToken: eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJkYmU2Y2I2My0yMTdmLTRmODYtOGZlYi1jYzczOWNkNjRkMGUifQ.eyJpYXQiOjE3OTEyMDM1MTksImp0aSI6IjAxNzM1ZWZmLTBkM2QtMzQzNS1hMDE5LTY3ZTEwOWRmNjcwZiIsImlzcyI6Imh0dHBzOi8vMTAuMTkwLjk3LjY4Lm5pcC5pby9hdXRoL3JlYWxtcy9wbGF0Zm9ybSIsImF1ZCI6Imh0dHBzOi8vMTAuMTkwLjk3LjY4Lm5pcC5pby9hdXRoL3JlYWxtcy9wbGF0Zm9ybSIsInN1YiI6ImVkYjJkM2E2LTRjMDQtNDJkMy1iYzQ2LTAyMDY1MDAwMTczYiIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJ0ZXN0c2VydmVyIiwic2lkIjoiV2w3UXRyWWJGaTBIYTNzS250ejl1ZmxzIiwic2NvcGUiOiJvZmZsaW5lX2FjY2VzcyByb2xlcyBwcm9maWxlIHdlYi1vcmlnaW5zIGFjciBzZXJ2aWNlX2FjY291bnQgZW1haWwgYmFzaWMiLCJhdWRfeCI6ImFjY291bnQiLCJwcm92IjoiZGVmYXVsdCJ9.XGI85jK9sXf_S05XFfDvSQv4zdO7O1gEZZzv3nbulYppbVDFV8cMfoLIM1CkkwK6_XrXQUvUnfvMV0pUPpqvng
+            teamspace: Initial Team Space
+            project: Anshul_SVT
+            branch: AnsFT
+            assetId: 2ff1840b54f05ddcc279c03ffaabb8199d50613c950191f0cfa700baf57
